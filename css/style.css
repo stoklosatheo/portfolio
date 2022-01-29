@@ -1,0 +1,437 @@
+/*----------GENERAL----------*/
+@font-face {
+    font-family: "Montserrat";
+    src: url('../font/montserrat/Montserrat-Light.ttf');
+}
+
+body{
+    margin: 0px;
+    font-family: "Montserrat";
+    background-color: #3E484A;
+}
+
+.flex{
+    display:flex;
+}
+
+.wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+.alignhori{
+    display: flex;
+    justify-content: center;
+}
+
+.alignverti{
+    display: flex;
+    align-items: center;
+}
+
+.spacea{
+    display: flex;
+    justify-content: space-around;
+}
+
+.spaceb{
+    display: flex;
+    justify-content: space-between;
+}
+
+.aligndroite{
+    text-align: right;
+}
+
+/*----------HEADER----------*/
+header{
+    background-color: #525F62;
+    color: #3DD0FF;
+
+    padding-left: 50px;
+    padding-right: 50px;
+
+    position: sticky;
+    top: 0;
+
+    transition-duration: 0.3s;
+}
+
+.anim-header{
+    background-color: #51747d ;
+    opacity: 75%;
+
+    transition-duration: 0.3s;
+}
+
+.menu .bouton{
+    background-color: #5a7885;
+
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 3px;
+    padding: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+    .menu .bouton:hover{
+        background-color:#6a7579;
+        transition-duration: 0.5s;
+    }
+
+.fa-file-download{
+    padding-left: 5px;
+    color:#92b3bb;
+}
+
+header a{
+    text-decoration: none;
+    text-decoration-style: none;
+    color: #3DD0FF
+}
+
+/*----------MAIN----------*/
+main{
+    width: 1300px;
+    margin: auto;
+}
+
+.clear{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.clear a{
+    text-decoration: none;
+    color: rgb(104, 192, 255);
+}
+    .clear a:hover{
+        color: rgb(186, 226, 251);
+        transition-duration: 0.3s;
+    }
+
+p{
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+h2{
+    font-size: 2em;
+    color: #3DD0FF;
+}
+
+h3{
+    color:rgb(172, 172, 172);
+    font-size: 1.5em;
+}
+
+/*----------FOOTER----------*/
+footer{
+    background-color: #343434;
+
+    margin-top: 100px;
+    padding-right: 50px;
+    padding-left: 50px;
+    height: 200px;
+}
+
+.contact{
+    width: 250px;
+}
+.contact p{
+    color:#a9a9a9;
+}
+
+.reseaux {
+    color:#626262;
+
+    padding-left: 250px;
+}
+
+.mentionslegales p{
+    color: #a9a9a9;
+    padding-left: 100px;
+}
+
+
+
+
+
+    /*----------page1----------*/
+    .circ{
+        width: 801px;
+        height: 475px;
+    }
+
+    .section1{
+        height: 800px;
+    }
+
+    .article1{
+        height: 200px;
+        margin-top: 200px
+    }
+
+    .section1 h2{
+        margin-top: 0px;
+    }
+
+    .bg{
+        height: 650px;
+        background-image: url("../images/portrait_neon.png"); 
+        background-size: 450px;
+        background-repeat: no-repeat;
+        margin-left: 50px;
+    }
+    
+    .article1 p{
+        color: white;
+        text-align: justify;
+    }
+
+    .article1 .bouton{
+        background-color: #5d5d5d;
+        border-color: #3DD0FF ;
+        color: #3DD0FF;
+
+        text-decoration: none;
+
+        width: 110px;
+        margin-top: 50px;
+
+        border-style: solid;
+        border-width: 2px;
+        border-radius: 3px;
+        padding: 5px;
+    }
+        .article1 .bouton:hover{
+            background-color: rgb(113, 113, 113);
+        }
+
+    /*----------page2----------*/
+    .section2{
+        margin-top: 225px;
+        text-align: center;
+    }
+
+    .article2{
+        margin-top: 125px;
+    }
+
+    .article2 p{
+        color: white;
+        text-align: justify;
+    }
+
+    .section2 h2{
+        margin-top: 0px;
+    }
+
+    .section2 i{
+        color: rgb(59, 59, 59);
+    }
+
+    .info1{
+        color: rgb(113, 113, 113);
+        text-align: center;
+        margin-bottom: 100px;
+    }
+    /*----------page3----------*/
+    .section3{
+        margin-top: 225px;
+    }
+
+    .section3 h2{
+        margin-top: 220px;
+    }
+
+    .logosec3 img{
+        width: 110px;
+        height: 110px;
+
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .logophp{
+        width: 210px;
+        height: 70px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .colonne1 :nth-child(4){
+        width: 110px;
+        height: 70px;
+    }
+
+    .colonne2{
+        padding-left: 650px;
+        width: 650px;
+    }
+
+    /*----------page4----------*/
+    .section4{
+        margin-top: 225px;
+    }
+
+    .article4{
+        padding-top: 280px
+    }
+
+    .article4 p{
+        color: white;
+        text-align: justify;
+    }
+
+    .section4 p{
+        color: white;
+    }
+
+    .blue{
+        color:#3DD0FF;
+    }
+
+    .lienprj{
+        text-decoration: none;
+        color: white;
+    }
+
+    .lienprj a span {
+        display:none;
+        }
+        
+        .lienprj a:hover span {
+        display:block;
+        }
+
+        .lienprj a:hover span img {
+            width: 400px;
+            }
+
+    .expgraph img{
+        width: 200px;
+    }
+
+    .animsites{
+        height: 200px;
+        border-style: solid;
+        border-color: #71dcff;
+        border-radius: 15px;
+        width: 720px;
+
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+        .animsites:hover{
+            background-color:rgb(95, 100, 103);
+            transition-duration: 0.3s;
+        }
+
+    /*----------page5----------*/
+    .section5{
+        margin-top: 225px;
+    }
+
+    .section5 img{
+        width: 720px;
+    }
+
+    .article5{
+        margin-top: 342px;
+    }
+
+        /* formulaire */
+        .form-style-6{
+            font: 95% Arial, Helvetica, sans-serif;
+            max-width: 400px;
+            margin: 10px auto;
+            padding: 16px;
+            background: #515151;
+        }
+        .form-style-6 h3{
+            background: #3DD0FF;
+            padding: 20px 0;
+            font-size: 140%;
+            font-weight: 300;
+            text-align: center;
+            color: #fff;
+            margin: -16px -16px 16px -16px;
+        }
+        .form-style-6 input[type="text"],
+        .form-style-6 input[type="date"],
+        .form-style-6 input[type="datetime"],
+        .form-style-6 input[type="email"],
+        .form-style-6 input[type="number"],
+        .form-style-6 input[type="search"],
+        .form-style-6 input[type="time"],
+        .form-style-6 input[type="url"],
+        .form-style-6 textarea,
+        .form-style-6 select 
+        {
+            -webkit-transition: all 0.30s ease-in-out;
+            -moz-transition: all 0.30s ease-in-out;
+            -ms-transition: all 0.30s ease-in-out;
+            -o-transition: all 0.30s ease-in-out;
+            outline: none;
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            width: 100%;
+            background: #3E484A;
+            margin-bottom: 4%;
+            border: 1px solid #3E484A;
+            padding: 3%;
+            color: #ccc;
+            font: 95% Arial, Helvetica, sans-serif;
+        }
+        .form-style-6 input[type="text"]:focus,
+        .form-style-6 input[type="date"]:focus,
+        .form-style-6 input[type="datetime"]:focus,
+        .form-style-6 input[type="email"]:focus,
+        .form-style-6 input[type="number"]:focus,
+        .form-style-6 input[type="search"]:focus,
+        .form-style-6 input[type="time"]:focus,
+        .form-style-6 input[type="url"]:focus,
+        .form-style-6 textarea:focus,
+        .form-style-6 select:focus
+        {
+            box-shadow: 0 0 5px #43D1AF;
+            padding: 3%;
+            border: 1px solid #43D1AF;
+        }
+        
+        .form-style-6 input[type="submit"],
+        .form-style-6 input[type="button"]{
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            width: 100%;
+            padding: 3%;
+            background: #3DD0FF;
+            border-bottom: 2px solid #30C29E;
+            border-top-style: none;
+            border-right-style: none;
+            border-left-style: none;	
+            color: #fff;
+        }
+        .form-style-6 input[type="submit"]:hover,
+        .form-style-6 input[type="button"]:hover{
+            background: #3DD0FF;
+        }

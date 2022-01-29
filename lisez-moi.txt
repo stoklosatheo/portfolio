@@ -1,0 +1,3 @@
+Seul le bouton github est fonctionnel dans le footer.
+C'est voulu, car mon site sera public, or je ne souhaite pas qu'on visite mes réseaux personnels.
+Je les ai laissé pour montrer que je les aurais mis en cas de lecture du cv par un recruteur.

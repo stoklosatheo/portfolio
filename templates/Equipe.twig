@@ -1,0 +1,56 @@
+{% extends "base.twig" %}
+
+{% block main %}
+    <h2>Gardiens</h2>
+        <ul class="gardiens alignhori spacea">  
+            {% for joueurs in gardiens %}
+            <div class="player alignhori alignverti">
+                <h2>{{ joueurs.prenom_joueur }} {{ joueurs.nom_joueur }}</h2>
+                <h3>{{ joueurs.numero_joueur }}</h3>
+                <img class="photosjoueurs" src="{{ joueurs.photo_joueur }}" alt="photo joueur">
+                <p><b>Poste</b> : {{ joueurs.poste_joueur }}</p>
+                <p><b>Nationalité</b> : {{ joueurs.nationalite_joueur }}</p> 
+            </div>
+            {% endfor %} 
+        </ul> 
+
+    <h2>Défenseurs</h2>
+        <ul class="defenseurs alignhori wrap spaceb">    
+            {% for joueurs in defenseurs %}
+            <div class="player alignhori alignverti">
+                <h2>{{ joueurs.prenom_joueur }} {{ joueurs.nom_joueur }}</h2>
+                <h3>{{ joueurs.numero_joueur }}</h3>
+                <img class="photosjoueurs" src="{{ joueurs.photo_joueur }}" alt="photo joueur">
+                <p><b>Poste</b> : {{ joueurs.poste_joueur }}</p>
+                <p><b>Nationalité</b> : {{ joueurs.nationalite_joueur }}</p> 
+            </div>
+            {% endfor %}
+        </ul> 
+
+    <h2>Milieux</h2>
+        <ul class="milieux alignhori wrap spaceb">  
+            {% for joueurs in milieux %}
+            <div class="player alignhori alignverti">
+                <h2>{{ joueurs.prenom_joueur }} {{ joueurs.nom_joueur }}</h2>
+                <h3>{{ joueurs.numero_joueur }}</h3>
+                <img class="photosjoueurs" src="{{ joueurs.photo_joueur }}" alt="photo joueur">
+                <p><b>Poste</b> : {{ joueurs.poste_joueur }}</p>
+                <p><b>Nationalité</b> : {{ joueurs.nationalite_joueur }}</p> 
+            </div>
+            {% endfor %}
+        </ul> 
+
+    <h2>Attaquants</h2>
+        <ul class="attaquants alignhori wrap spaceb">      
+            {% for joueurs in attaquants %}
+            <div class="player alignhori alignverti">
+                <h2>{{ joueurs.prenom_joueur }} {{ joueurs.nom_joueur }}</h2>
+                <h3>{{ joueurs.numero_joueur }}</h3>
+                <img class="photosjoueurs" src="{{ joueurs.photo_joueur }}" alt="photo joueur">
+                <p><b>Poste</b> : {{ joueurs.poste_joueur }}</p>
+                <p><b>Nationalité</b> : {{ joueurs.nationalite_joueur }}</p> 
+            </div>
+            {% endfor %}
+        </ul>  
+    
+{% endblock %}

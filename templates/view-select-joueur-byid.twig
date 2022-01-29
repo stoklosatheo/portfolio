@@ -1,0 +1,11 @@
+{% extends 'base.twig' %}
+
+{% block main %}
+    <div class="container">
+        <h1>{{joueuret.nom_joueur}}</h1>
+        <p>Poste : {{joueuret.poste_joueur}}</p>
+        <p>
+            <img src="{{joueuret.photo_joueur}}" alt="joueuret">
+        </p>
+    </div>
+{% endblock %}

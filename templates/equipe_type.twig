@@ -1,0 +1,21 @@
+{# fichier accueil.twig #}
+{% extends "base.twig" %}
+
+ 
+{# nouveau contenu pour 'main' #}
+{% block main %}
+    <div>
+        <div>
+            <h2>Equipe Type</h2>
+            {% for equipe_type in equipe_type %}
+            <h3>Nom: {{equipe_type.nom_joueur}}</h3>
+            <p>Poste: {{equipe_type.poste_joueur}}</p>
+            <img class="imget" src={{ equipe_type.photo_joueur }} alt="joueuret">          
+            <a href="controller-select-joueur-byid.php?id={{equipe_type.id_joueur}}" class="bouton">Le joueur</a>
+            <a href="controller-update-form-joueur.php?id={{equipe_type.id_joueur}}" class="bouton">Modifier</a>
+            <a href="controller-delete-joueur.php?id={{joueuret.id}}" class="bouton">Supprimer</a>
+            {% endfor %}
+        </div>
+    </div>
+   
+{% endblock %}

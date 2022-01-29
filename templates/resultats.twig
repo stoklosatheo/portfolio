@@ -1,0 +1,16 @@
+{% extends "base.twig" %}
+
+{% block main %}
+    {% for resultats in resultats %}   
+        <div class="alignverti">
+            <h2>Journée {{ resultats.id_journee }}</h2>      
+                <h3>{{ resultats.equipe_dom }} - {{ resultats.equipe_ext }}</h3>
+                <iframe width="900" height="506" src={{ resultats.video_resume }} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        {% for titulaire in titulaire %}
+        <p> {{ titulaire.nom_joueur }} a joué ce match.</p>
+        {% endfor %}       
+    {% endfor %} 
+    
+{% endblock %}
+

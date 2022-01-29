@@ -1,0 +1,25 @@
+{# fichier accueil.twig #}
+{% extends "base.twig" %}
+
+ 
+{# nouveau contenu pour 'main' #}
+{% block main %}
+<div class="container">
+    <h1>Votre équipe-type</h1>
+    <form action="controller-insert-validation-joueur.php" method="POST" enctype="multipart/form-data">
+        <div class="mb-3">
+            <label for="nom_joueuret" class="form-label">Nom du joueur</label>
+            <input required type="text" class="form-control" id="nom_joueuret" name="nom_joueuret" value="">
+        </div>
+        <div class="mb-3">
+            <label for="poste_joueuret" class="form-label">Poste joueur</label>
+            <input required type="text" class="form-control" id="poste_joueuret" name="poste_joueuret" value="">
+        </div>
+        <div class="mb-3">
+            <label for="photo_joueuret" class="form-label">URL Photo joueur</label>
+            <input required type="text" class="form-control" id="photo_joueuret" name="photo_joueuret" value="">
+        </div>
+        <button type="submit" class="bouton">Valider</button>
+    </form>
+</div>
+{% endblock %}

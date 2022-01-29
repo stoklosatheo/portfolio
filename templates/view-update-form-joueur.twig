@@ -1,0 +1,32 @@
+{% extends 'base.twig' %}
+
+{% block main %}
+    <div class="container">
+        <h1>
+            Modifier le joueur {{joueuret.nom_joueur}}
+        </h1>
+        <form action="controller-update-validation-joueur.php" method="POST" enctype="multipart/form-data">
+            <div class="mb-3">
+                <label for="nom_joueuret" class="form-label">Id joueur (nombre total de joueurs + 1)</label>
+                <input required type="number" class="form-control" id="id_joueuret" name="id_joueuret" value="{{joueuret.id_joueur}}">
+            </div>
+            <div class="mb-3">
+                <label for="nom_joueuret" class="form-label">Nom du joueur</label>
+                <input required type="text" class="form-control" id="nom_joueuret" name="nom_joueuret" value="{{joueuret.nom_joueur}}">
+            </div>
+            <div class="mb-3">
+                <label for="poste_joueuret" class="form-label">Poste</label>
+                <input required type="text" class="form-control" id="poste_joueuret" name="poste_joueuret" value="{{joueuret.poste_joueur}}">
+            </div>
+            <div class="mb-3">
+                <p>joueur actuel :</p>
+                <img src="{{joueuret.photo_joueur}}" alt="joueuret">
+            </div>
+            <div class="mb-3">
+                <label for="photo_joueuret" class="form-label">URL Photo</label>
+                <input required class="form-control" type="text" name="photo_joueuret" id="photo_joueuret">
+            </div>
+            <button type="submit" class="btn btn-primary">Modifier</button>
+        </form>
+    </div>
+{% endblock %}

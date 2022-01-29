@@ -1,0 +1,9 @@
+{# fichier apropos.twig #}
+{% extends "base.twig" %}
+ 
+{# On définit un nouveau contenu pour 'main' #}
+{% block main %}
+<h1>A propos</h1>
+<img src="{{ url }}" alt="notre équipe">
+<p>{{ credits }}</p>
+{% endblock %}

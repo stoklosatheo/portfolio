@@ -1,0 +1,26 @@
+{% extends 'base.twig' %}
+
+
+{% block page %}
+<main class="flex center-hori column space-a">
+	<article class="flex column space-b">                
+		<button class="accordion header_carte flex center-verti space-b">                     
+				<h2>{{ article.titre }}</h2>
+				<p>{{ article.date }}</p>
+		</button>
+		<div class="panel">
+			<div class="body_carte flex column space-col-b">
+					<p class="categorie">{{ article.categorie }}</p>
+					<img class="img_article" src="{{ article.img_article }}" />
+					<p class="resume">{{ article.texte_intro }}</p>
+					<p class="contenu">{{ article.contenu }}</p>
+			</div>
+
+			<div class="footer_carte flex space-a">
+				<a href="index.php?page=article&action=edit&id={{ article.id }}">modifier</a>
+				<a href="index.php?page=article&action=delete&id={{ article.id }}">supprimer</a>
+			</div>
+		</div>
+	</article>
+</main>
+{% endblock %}

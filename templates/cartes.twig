@@ -1,0 +1,31 @@
+{# fichier accueil.twig #}
+{% extends "base.twig" %}
+
+ 
+{# nouveau contenu pour 'main' #}
+{% block page %}
+<main class="flex space-a wrap">
+    {% for cartes in previsu_article %}
+        <article class="carte flex column space-b">
+            {# HEADER Carte #}
+            {# <div class="header_carte flex">
+                <h2>{{ cartes.titre }}</h2>
+                <p>{{ cartes.date }}</p>
+             </div> #}
+
+            {# BODY Carte #}
+            <div class="body_carte flex column space-b">
+                {# <p class="categorie">{{ cartes.categorie }}</p>
+                <img class="img_carte" src="{{ cartes.img_article }}" /> #}
+                <p class="resume">{{ cartes.texte_intro }}</p>
+            </div>
+
+            {# FOOTER Carte #}
+            {# <div class="footer_carte flex space-b">
+                <a href="articles.php">Lire l'article</a>
+                <a href="controleur-article.php?id={{cartes.id_p}}" class="bouton">Supprimer l'article</a>
+            </div> #}
+        </article>
+    {% endfor %}
+</main>
+{% endblock %}

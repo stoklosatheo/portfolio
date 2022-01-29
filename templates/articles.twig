@@ -1,0 +1,40 @@
+{# {% extends 'base.twig' %}
+
+{% block page %}
+	<h6>Liste des articles</h6>
+	{% for article in articles %}
+		<p>{{ article.titre }}
+			<a href="index.php?page=article&id={{ article.id }}">détails</a>
+			<a href="index.php?page=article&action=edit&id={{ article.id }}">modifier</a>
+			<a href="index.php?page=article&action=delete&id={{ article.id }}">supprimer</a>
+		</p>
+	{% endfor %}
+{% endblock %} #}
+
+{% extends 'base.twig' %}
+
+{% block page %}
+<main class="flex space-b wrap">
+	{% for article in articles %}
+			<article class="flex column space-b carte">                
+				<div class="header_carte flex center-verti space-b">                     
+					<h2>{{ article.titre }}</h2>
+					<p>{{ article.date }}</p>
+				</div>
+
+				<div class="body_carte flex column space-col-b">
+					<p class="categorie">{{ article.categorie }}</p>
+					<img class="img_article" src="{{ article.img_article }}" />
+					<p class="resume">{{ article.texte_intro }}</p>
+				</div>
+
+				<div class="footer_carte flex space-a">
+					<a href="index.php?page=article&id={{ article.id }}">détails</a>
+					<a href="index.php?page=article&action=edit&id={{ article.id }}">modifier</a>
+					<a href="index.php?page=article&action=delete&id={{ article.id }}">supprimer</a>
+				</div>
+			</article>
+	{% endfor %}
+</main>
+
+{% endblock %}

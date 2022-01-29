@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Blog - Accueil</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="flex center-hori">
+	<div class="wraper column">
+		<header>
+			<div class="banniere flex center-hori center-verti column">
+				<img src="images/banniere.png" alt="banniere_header" />
+
+				<div class="row">
+					{% for ecusson in ecussons %}
+						<img src="{{ ecusson.ecussons }}" alt="ecussons_equipes" />         
+					{% endfor %}
+				</div>
+			</div>
+
+			<nav class="menu flex center-hori">
+				<a class="lien" href="index.php">Liste des articles</a>
+                <a class="lien" href="index.php?page=form_article">Ajouter un article</a>	
+			</nav>
+		</header>
+
+        <!-- bloc pouvant être spécialisé -->
+        {% block page %}
+        {% endblock %}
+	</div>
+
+	<script type="text/javascript" src="js/donnees.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

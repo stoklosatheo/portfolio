@@ -1,0 +1,14 @@
+{% extends 'base.twig' %}
+
+{% block page %}
+	<h6>Modifier un article</h6>
+	<form action="index.php?page=article&action=update" method="post">
+		<input type="texte" readonly name="id" value="{{ article.id }}">
+		<input type="text" name="titre" placeholder="Saisir un titre" value="{{ article.titre }}">
+		<input type="text" name="categorie" placeholder="Saisir un categorie" value="{{ article.categorie }}">
+		<input type="date" name="date" placeholder="Saisir la date de création" value="{{ article.date }}">
+		<input type="text" name="img_article" placeholder="Saisir l'adresse de l'image" value="{{ article.img_article }}">
+		<input type="text" name="contenu" placeholder="Saisir le contenu" value="{{ article.contenu }}">
+		<input type="submit" value="Modifier">
+	</form>
+{% endblock %}

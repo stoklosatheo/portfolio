@@ -1,0 +1,45 @@
+{% extends 'base.twig' %}
+
+{% block page %}
+	<h6>Ajouter un article</h6>
+	<form action="index.php?page=article&action=create" method="post">
+
+		<input type="text" name="titre" placeholder="Saisir un titre">
+			<select name="categorie" id="categorie">
+				<option value="">--Choisir une catégorie--</option>
+				<option value="Résultats">Résultats</option>
+				<option value="Mercato">Mercato</option>
+				<option value="Divers">Divers</option>
+			</select>
+		<input type="date" name="date" placeholder="Saisir la date de création">
+		<input type="text" name="img_article" placeholder="Saisir l'adresse de l'image">
+		<input type="text" name="texte_intro" placeholder="Saisir le résumé de l'article">
+		<input type="text" name="contenu" placeholder="Saisir le contenu">
+		
+		<input type="submit" value="Créer">
+	</form>
+{% endblock %}
+
+
+{# {% block page %}
+<form action="index.php?page=article&action=create" method="post" class="form">
+	<div class="title">Ajouter un article</div>
+	<div class="subtitle">Essayez si possible de remplir tous les champs</div>
+	<div class="input-container ic1">
+	  <input id="firstname" class="input" type="text" placeholder=" " />
+	  <div class="cut"></div>
+	  <label for="firstname" class="placeholder">Titre</label>
+	</div>
+	<div class="input-container ic2">
+	  <input id="lastname" class="input" name="categorie" type="text" placeholder=" " />
+	  <div class="cut"></div>
+	  <label for="lastname" class="placeholder">Catégorie</label>
+	</div>
+	<div class="input-container ic2">
+	  <input id="email" class="input" type="date" name="date" placeholder=" " />
+	  <div class="cut cut-short"></div>
+	  <label for="email" class="placeholder">Date<label/>
+	</div>
+	<button type="submit" class="submit" value="Créer">Valider</button>
+</form>
+{% endblock %} #}

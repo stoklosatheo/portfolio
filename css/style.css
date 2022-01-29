@@ -1,0 +1,305 @@
+/* RESET CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* GENERAL */
+body{
+    font-family:Arial, Helvetica, sans-serif
+}
+
+.flex {
+    display: flex;
+}
+
+.space-b {
+    justify-content: space-between;
+}
+
+.space-a {
+    justify-content: space-around;
+}
+
+.center-hori {
+    justify-content: center;
+}
+
+.center-verti {
+    align-items: center;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.wraper {
+    width: 960px;
+}
+
+ /* HEADER */
+header img {
+    width: 50%;
+}
+.lien {
+    padding: 5px;
+    margin: 5px;
+
+    color: rgb(39, 116, 146);
+
+    border-style: solid;
+    border-width: 2px;
+    border-color: skyblue;
+    border-radius: 5px;
+
+    text-decoration: none;
+}
+
+.lien:hover {
+    background-color: rgb(240, 251, 255);
+    transition-duration: 0.3s;
+}
+
+.lienfiltre {
+    padding: 5px;
+    margin: 5px;
+
+    color: rgb(39, 116, 146);
+
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(0, 88, 123);
+    border-radius: 5px;
+
+    text-decoration: none;
+}
+
+.lienfiltre:hover {
+    background-color: rgb(240, 251, 255);
+    transition-duration: 0.3s;
+}
+
+.menu {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* MODE SOMBRE */
+.mode_sombre {
+    background-color: grey;
+  }
+  
+  .mode_sombre h1 {
+    color: white;
+  }
+
+.btn_mode_sombre {
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 5px;
+    margin: 5px;
+}
+
+.btn_mode_sombre:hover {
+    background-color: rgb(169, 169, 169);
+    transition-duration: 0.3s;
+}
+
+/* MAIN */
+    /*---carte---*/
+    .carte {
+        border-style: solid;
+        border-color: rgb(207, 207, 207);
+        border-width: 0.5px;
+        border-radius: 7px;
+        overflow: hidden;
+      
+        width: 450px;
+      
+        margin-bottom: 10px;
+        margin-left: 10px;
+      
+        position: relative;
+    }
+
+    .img_carte {
+        width: 50%;
+    }
+
+    .header_carte {
+        background-color: skyblue;
+        margin: 0;
+        padding: 10px;
+    }
+
+    .header_carte h2 {
+        margin: 0;
+        width: 300px;
+        font-size: 1.5em;
+    }
+
+    .body_carte {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .footer_carte {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+    }
+
+    /*---article---*/
+    article {
+        border-style: solid;
+        border-color: rgb(207, 207, 207);
+        border-width: 0.5px;
+        border-radius: 7px;
+        overflow: hidden;
+
+        margin-bottom: 10px;
+        margin-left: 10px;
+
+        position: relative;
+    }
+
+    .resume {
+        font-style: italic;
+    }
+
+        /*---accordeon*/
+            .accordion {
+                background-color: skyblue;
+                color: #444;
+                cursor: pointer;
+                padding: 18px;
+                width: 100%;
+                border: none;
+                text-align: left;
+                outline: none;
+                font-size: 15px;
+                transition: 0.4s;
+            }
+            
+            .active, .accordion:hover {
+                background-color: skyblue;
+            }
+            
+            .accordion:after {
+                color: #777;
+                font-weight: bold;
+                float: right;
+                margin-left: 5px;
+            }
+            
+            .active:after {
+                content: "\2212";
+            }
+            
+            .panel {
+                padding: 0 18px;
+                background-color: white;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.2s ease-out;
+            }
+
+            /* couleur categorie */
+            .cyan {
+                color: rgb(91, 185, 185);
+                font-size: 2em;
+              }
+              
+              .magenta {
+                color: magenta;
+                font-size: 2em;
+              }
+              
+              .vert {
+                color: green;
+                font-size: 2em;
+              }
+
+    /*--- Lightbox ---*/
+    #lightbox {
+        position: fixed;
+        z-index: 1000;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .8);
+        display: none;
+      }
+    
+      #lightbox.active {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    
+      #lightbox img {
+        max-width: 90%;
+        max-height: 80%;
+        padding: 4px;
+        background-color: black;
+        border: 2px solid white;
+      }

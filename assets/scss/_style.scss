@@ -1,0 +1,136 @@
+/*------ RESET CSS ------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*------ fin reset ------*/
+
+$secondary: rgb(181, 59, 104);
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+footer {
+    height: 50px;
+    background-color: rgb(52, 58, 64);
+}
+
+aside {
+    background-color: rgb(52, 58, 64);
+    width: 1650px !important;
+}
+
+.p-3 {
+	padding: 0 !important;
+}
+
+header {
+    background-color: rgb(181, 59, 104);
+}
+
+.navbar {
+    width: 98%;
+
+}
+
+.right_header {
+    width: 420px;
+}
+
+.name {
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.row {
+	margin-right: 0 !important;
+}
+
+.bouton_carte {
+	background-color: rgb(181, 59, 104);
+}
+
+.voir_tout {
+	color: rgb(255, 131, 78);
+	margin-top: 20px;
+}
+
+.card-title {
+	margin-bottom: 0;
+}
+
+.nav {
+	width: 100%;
+	margin: 0;
+}
+
+.nav-text {
+	color: rgb(202, 204, 205);
+}
+
+.nav-link:hover {
+	background-color: black;
+	border-left-style: solid;
+	border-color:rgb(255, 131, 78);
+	border-radius: 0px;
+}
+
+.picto_aside {
+	padding-right: 20px;
+}
+
+section {
+	padding-left: 20px;
+	padding-top: 30px;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+	background-color: black;
+	border-radius: 0px;
+	border-color: orange;
+}
+
+.bg-secondary {
+	background-color: rgb(255, 131, 78);
+}

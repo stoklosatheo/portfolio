@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d328ad82ed.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/app.css" />
+    <title>Document</title>
+</head>
+<body class="min-vh-100 fs-6">
+    <div class="wrapper">
+
+        <header class="d-flex justify-content-center">
+            <nav class="navbar navbar-expand-lg navbar-light text-light">
+                <div class="d-flex justify-content-between container-fluid">
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-bars navbar-brand text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample"></i>
+                        <p>Admin Panel</p>
+                    </div>
+                    <div class="d-sm-flex align-items-center justify-content-between">
+                        <input class="form-control me-2 w-50 d-sm-flex d-none" type="search" placeholder="Recherche" aria-label="Search" />
+                        <div class="d-flex align-items-center ">
+                            <ul class="navbar-nav jusitfy-content-between d-xs-flex flex-row align-items-center justify-content-between">
+                                <li class="nav-item"><i class="fas fa-search d-sm-none "></i></li>
+                                <li class="nav-item dropdown">
+                                    
+                                    <a class="nav-link dropdown-toggle text-white d-sm-flex align-items-center" id="navbarDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user-circle fa-fw fa-2x"></i><p class="d-sm-flex d-none">Théo STOKLOSA</p></a>
+                                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                        <li class="d-sm-none d-flex"><p class="dropdown-item">Théo STOKLOSA</p></li>
+                                        <li class="d-sm-none d-flex"><hr class="dropdown-divider"></li>
+                                        <li><a class="dropdown-item" href="#">Mon profil</a></li>
+                                        <li><a class="dropdown-item" href="#">Mes messages <span class="badge bg-secondary">18</span> </a></li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li><a class="dropdown-item" href="#">Déconnexion</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        
+        <main class="d-flex min-vh-100">
+            <aside class="col flex-column p-3 text-white">
+                <ul class="nav nav-pills flex-column mb-auto collapse collapse-horizontal" id="collapseWidthExample">
+                  <li class="nav-item">
+                    <a class="nav-link active d-flex text-white border-start" href="#">
+                        <i class="picto_aside fas fa-tachometer-alt"></i>
+                      <p class="nav-text">Tableau de bord</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link text-white d-flex">
+                        <i class="picto_aside fas far fa-file"></i>
+                      <p class="nav-text">Pages</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link text-white d-flex">
+                        <i class="picto_aside fas fa-newspaper"></i>
+                      <p class="nav-text">Articles</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link text-white d-flex">
+                        <i class="picto_aside fas fa-user"></i>
+                      <p class="nav-text">Utilisateurs</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link text-white d-flex js">
+                        <i class="picto_aside fas fa-cog"></i>
+                      <p class="nav-text">Paramètres</p>
+                    </a>
+                  </li>
+                </ul>
+            </aside>
+            
+            <section class="row">
+                <div class="col-md-12 col-lg-5 col-xl-6">
+                    <div class="card">
+                        <div class="card-header d-flex justify-content-between align-items-center">
+                            <h5 class="card-title">Pages récentes</h5>
+                            <a href="#" class="btn bouton_carte d-flex align-items-center justify-content-between text-light"><i class="fas fa-plus"></i><p>Créer une page</p></a>
+                        </div>
+                        <div class="card-body d-flex align-item-between flex-column container-fluid">
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Integer tempor magna eu porta accumsan. Ut et congue sem, 
+                                sollicitudin tincidunt quam. Sed et blandit velit. 
+                                In suscipit vel ligula imperdiet auctor. Etiam nulla nisl, suscipit vel porta sit amet, 
+                                facilisis sit amet nunc.
+                            </p>
+                            <a class="voir_tout text-decoration-none" href="#">VOIR TOUT</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-5 col-xl-6">
+                    <div class="card">
+                        <div class="card-header d-flex justify-content-between align-items-center">
+                            <h5 class="card-title">Inscriptions récentes</h5>
+                            <a href="#" class="btn bouton_carte d-flex align-items-center justify-content-between text-light"><i class="fas fa-plus"></i><p>Créer un utilisateur</p></a>
+                        </div>
+                        <div class="card-body d-flex flex-column align-items-between">
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Integer tempor magna eu porta accumsan. Ut et congue sem, 
+                                sollicitudin tincidunt quam. Sed et blandit velit. 
+                                In suscipit vel ligula imperdiet auctor. Etiam nulla nisl, suscipit vel porta sit amet, 
+                                facilisis sit amet nunc.
+                            </p>
+                            <a class="voir_tout text-decoration-none" href="#">VOIR TOUT</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-5 col-xl-6">
+                    <div class="card">
+                        <div class="card-header d-flex justify-content-between align-items-center">
+                            <h5 class="card-title">Articles récents</h5>
+                            <a href="#" class="btn bouton_carte d-flex align-items-center justify-content-between text-light"><i class="fas fa-plus"></i><p>Créer un article</p></a>
+                        </div>
+                        <div class="card-body d-flex flex-column align-items-between">
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Integer tempor magna eu porta accumsan. Ut et congue sem, 
+                                sollicitudin tincidunt quam. Sed et blandit velit. 
+                                In suscipit vel ligula imperdiet auctor. Etiam nulla nisl, suscipit vel porta sit amet, 
+                                facilisis sit amet nunc.
+                            </p>
+                            <a class="voir_tout text-decoration-none" href="#">VOIR TOUT</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-5 col-xl-6">
+                    <div class="card">
+                        <div class="card-header d-flex justify-content-between align-items-center">
+                            <h5 class="card-title">Statistiques</h5>
+                            <a href="#" class="btn bouton_carte text-light d-flex justify-content-between"><i class="fas fa-cog"></i><i class="fas fa-caret-down"></i></a>
+                        </div>
+                        <div class="card-body d-flex flex-column align-items-between">
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Integer tempor magna eu porta accumsan. Ut et congue sem, 
+                                sollicitudin tincidunt quam. Sed et blandit velit. 
+                                In suscipit vel ligula imperdiet auctor. Etiam nulla nisl, suscipit vel porta sit amet, 
+                                facilisis sit amet nunc.
+                            </p>
+                            <a class="voir_tout text-decoration-none" href="#">VOIR TOUT</a>
+                        </div>
+                    </div>        
+            </section>
+        </div>
+        </main>  
+        <footer class="d-flex align-items-center justify-content-center">
+            <i class="far fa-copyright d-flex justify-content-center text-light h-100 align-items-center"></i><p class="text-light">Admin Panel - 2019 - Développé par Théo STOKLOSA</p>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

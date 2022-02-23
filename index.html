@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP1 - Mobiles</title>
+    <style>
+        html {
+            font-family: sans-serif;
+        }
+        body {
+            /* Pour cacher les scrollbar en cas de débordement d'un élément */
+            overflow: hidden;
+        }
+        .mobile {
+            position: absolute;
+        }
+    </style>
+    <script type="text/javascript" src="js/mobile.js" defer></script>
+    <script type="text/javascript" src="js/mobilebox.js" defer></script>
+</head>
+<body>
+    <button id="mob1" class="position">Mob1</button><button id="del1" class="del">Supprimer</button>
+    <button id="mob2" class="position">Mob2</button><button id="del2" class="del">Supprimer</button>
+    <button id="mob3" class="position">Mob3</button><button id="del3" class="del">Supprimer</button>
+
+    <fieldset>
+        <legend>Couleurs</legend>
+        <label for="c1">mob1</label>
+        <input type="color" class="color" id="c1">
+        <label for="c2">mob2</label>
+        <input type="color" class="color" id="c2">
+        <label for="c3">mob3</label>
+        <input type="color" class="color" id="c3">
+    </fieldset>
+
+    <fieldset>
+        <legend>Choix Utilisateur</legend>
+        <label for="nb1">Nombre de mobiles</label>
+        <input type="number" id="nb1">
+        <button id="nbmob" class="nbmob">Valider</button>
+    </fieldset>
+
+    <button id="deplace" class="deplace">Déplacement</button>
+    <button id="anim" class="anim">Lancer l'animation</button>
+    <button id="animInBox" class="animInBox">Lancer l'animation boîte</button>
+    <button id="animInBox2" class="animInBox2">Anim MobileBox</button>
+
+    <!-- <div id="div1" class="mobile">div1</div>
+    <div id="div2" class="mobile">div2</div>
+    <div id="div3" class="mobile">div3</div> -->
+</body>
+</html>
